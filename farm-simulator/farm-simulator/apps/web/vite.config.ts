@@ -7,6 +7,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 // hand-written serviceWorker.js, which only ever cached /index.html and so
 // failed on a cold offline start.
 export default defineConfig({
+  base: './',
   server: { proxy: { '/api': 'http://localhost:8787' } },
   plugins: [react(),
             base: './',
