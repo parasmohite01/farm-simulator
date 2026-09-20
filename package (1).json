@@ -1,0 +1,16 @@
+{
+  "name": "farm-simulator",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/api & npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=packages/engine && npm run build --workspace=apps/web",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings 0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "eslint": "^9.12.0"
+  }
+}
