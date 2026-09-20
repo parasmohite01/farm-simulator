@@ -8,8 +8,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 // failed on a cold offline start.
 export default defineConfig({
   server: { proxy: { '/api': 'http://localhost:8787' } },
-  plugins: [
-    react(),
+  plugins: [react(),
+            base: './',
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon-192.png', 'icon-512.png'],
