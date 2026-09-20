@@ -1,5 +1,6 @@
 {
   "name": "@farm/web",
+  "main": "electron.cjs"
   "version": "1.0.0",
   "type": "module",
   "scripts": { "dev": "vite", "build": "tsc -b && vite build", "preview": "vite preview" },
